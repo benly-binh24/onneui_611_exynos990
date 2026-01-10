@@ -4,15 +4,15 @@ on:
   push:
     branches: [ main ]
     paths:
-      - 'arch/arm64/configs/exynos9830_defconfig'
+      - 'arch/arm64/configs/extreme_defconfig'
   pull_request:
     branches: [ main ]
     paths:
-      - 'arch/arm64/configs/exynos9830_defconfig'
+      - 'arch/arm64/configs/extreme_defconfig'
   workflow_dispatch:
     inputs:
       force_build:
-        description: 'Force build even if exynos9830_defconfig is not modified (manual trigger)'
+        description: 'Force build even if extreme_defconfig is not modified (manual trigger)'
         type: boolean
         default: false
 
